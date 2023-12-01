@@ -6,15 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game.vn</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/Circle-icons-computer.svg.png">
-    <link rel="stylesheet" href="/Game-vn/assets/css/base.css">
-    <link rel="stylesheet" href="/Game-vn/assets/css/resonsive.css">
-    <link rel="stylesheet" href="/Game-vn/assets/css/style.css">
-    <link rel="stylesheet" href="/Game-vn/assets/font/fontawesome-free-6.2.0-web/css/all.css">
-    <link rel="stylesheet" href="/main.js">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <!-- <link rel="stylesheet" href="./assets/css/reponsive.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.0-web/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <body>
+   
     <div id="main">
-        <div id="header">
+        <div class="header-warp container-fluid">
+            <div class="header-warp__left">
+                <div class="logo-web">
+                    <!-- <i class="fa-solid fa-bars"></i> -->
+
+                    <img src="./assets/img/home.png" alt="logo">
+                </div>
+                <div class="nav-wrap d-none d-md-none d-lg-block">
+                    <ul class="nav">
+                        <li class="nav-item nav-wrap__item">
+                            <div class="nav-wrap__item--title">
+                                <img class="nav-wrap__item--img" src="./assets/img/gamepng.png" alt="">
+                                <span>GAME</span><i class="fa-solid fa-chevron-down nav-wrap__icon"></i>
+                            </div>
+    
+                        </li>
+                        <li class="nav-item nav-wrap__item">
+                            <div class="nav-wrap__item--title">
+                                <img class="nav-wrap__item--img" src="./assets/img/giftcode.png" alt="">
+                                <span>GIFTCODE</span>
+                            </div>
+    
+                        </li>
+                        <li class="nav-item nav-wrap__item">
+                          <div class="nav-wrap__item--title">
+                                <img class="nav-wrap__item--img" src="./assets/img/tour.png" alt="">
+                                <span>GIẢI ĐẤU</span>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-wrap__item">
+                            <div class="nav-wrap__item--title">
+                                <img class="nav-wrap__item--img" src="./assets/img/vip.png" alt="">
+                                <span>ĐẶC QUYỀN VIP</span>
+                            </div>
+                          </li>
+                          <li class="nav-item nav-wrap__item">
+                            <div class="nav-wrap__item--title">
+                                <img class="nav-wrap__item--img" src="./assets/img/pay.png" alt="">
+                                <span>NẠP GẠO</span>
+                            </div>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+              <div class="header-warp__right">
+                    <div class="search-wrap">
+                        <i class="fa fa-search search-wrap__icon"></i>
+                        <input class="form-control mr-sm-2 search-wrap__input" type="search" placeholder="Tìm kiếm game..." aria-label="Search">
+                    </div>
+                    <button type="button" class="btn btn-login">
+                        <span class="btn-login__text">Đăng nhập</span>
+                    </button>
+              </div>
+        </div>
+
+        <!-- <div id="header">
+            
+
             <ul id="nav-pc">
                 <li><a href="#">
                     <img src="/Game-vn/assets/img/home.png" alt="" class="img-home">
@@ -48,7 +106,7 @@
                     <div class="search">
                         <div class="btn-search">
                             <i class="fa fa-search"></i>
-                            <input  type="text" class="searchTerm" placeholder=" Tìm kiếm game ...">
+                            <input type="text" class="searchTerm" placeholder=" Tìm kiếm game ...">
                         </div>
                         
                      </div>
@@ -59,481 +117,753 @@
                 </li>
             </ul>
 
-            <!-- <ul id="nav-mobile">
-                <li class="nav-home"><a href="#">HOME</a>
-                </li>                
-                <li class="nav-menu__btn"><i class="fa-solid fa-bars"></i></li>
-                
-                    <ul class="nav-list">
-                        <li><a href="#band">BAND</a></li>
-                        <li><a href="#tour">TOUR</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                        <li><a href="#">MERCH</a></li>
-                    </ul>
-                    
-                
-                
-            </ul> -->
-
             
-        </div>
+        </div> -->
 
-        <div id="slider" class="slider">
-            <div id="slider-scroll" >
+        <div id="slider" class="slider container-fluid">
+            <div class="slider-scroll" >
                 <div class="right-slider">
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                
-                
-                <h2 class="title-slider">COOKIE CONNECT
-                <h4 class="title2-slider">Loại game:Casual Game</h4>
-                </h2>
-                
-                <p class="text-slider">Sàn đấu trí tuệ online,với hai kiểu đánh Cờ Tướng truyền thống và Cờ úp</p>
-                <button class="button-play" role="button"><i class="fa-regular fa-circle-play"></i> Chơi ngay</button>
                 <div class="left-slider">
                     <i class="fa-solid fa-chevron-left"></i>
                 </div>
 
-                <a class="appstore">
-                    <img class="appstore-img" src="/Game-vn/assets/img/appstore.png" alt="">
-                </a>
+                <div class="slider-container">
+                    <div class="slider-text">
+                        <h2>COOKIES CONNECT</h2>
+                        <div class="slider-subtext">
+                            <span>Loại game:Casual Game</span>
+                            <div class="slider-subtext__right">
+                                <span>Nền tảng</span>
+                                <i class="fa-solid fa-laptop"></i>
+                                <i class="fa-solid fa-desktop"></i>
+                            </div>
+                        </div>
+                    </div>
 
-                <a class="ggplay">
-                    <img class="ggplay-img" src="/Game-vn/assets/img/ggplay.png" alt="">
-                </a>
+
+                    <button class="button-play" role="button"><i class="fa-regular fa-circle-play"></i> 
+                        <span>Chơi ngay</span>
+                    </button>
+
+                    <div class="slider-icon">
+                        <a class="appstore">
+                            <img class="appstore-img" src="/Game-vn/assets/img/appstore.png" alt="">
+                        </a>
+        
+                        <a class="ggplay">
+                            <img class="ggplay-img" src="/Game-vn/assets/img/ggplay.png" alt="">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                </div>
+
+
             </div>
 
-            <div class="slider-sub">
-                <div class="slider-container">
+
+            
+        </div>
+        <div class="card-slide">
+            <div class="card-slide__wrap">
+                <div class="card-slide__item card__selected">
                     <img src="./assets/img/slidergame.png" alt="">
                 </div>
-                <div class="slider-container">
-                    <img src="./assets/img/slidergame.png" alt="">
+                <div class="card-slide__item">
+                    <img src="./assets/img/non-selected.png" alt="">
                 </div>
-                <div class="slider-container">
-                    <img src="./assets/img/slidergame.png" alt="">
+                <div class="card-slide__item">
+                    <img src="./assets/img/non-selected.png" alt="">
                 </div>
-                <div class="slider-container">
-                    <img src="./assets/img/slidergame.png" alt="">
+                <div class="card-slide__item">
+                    <img src="./assets/img/non-selected.png" alt="">
                 </div>
-                <div class="slider-container">
-                    <img src="./assets/img/slidergame.png" alt="">
+                <div class="card-slide__item">
+                    <img src="./assets/img/non-selected.png" alt="">
                 </div>
                 
             </div>
         </div>
-
         <div id="content">
-            <div class="game-new">
-                <div class="game-new__title">
-                    <img style="display: inline-block;" src="/Game-vn/assets/img/newgamepng.png" alt="">
-                    <h4>GAME MỚI</h4>
-                    <a href="">Xem tất cả <img style="position: absolute; top:4px ;" src="/Game-vn/assets/img/right.png" alt=""></a>
+
+            <div class="content-container">
+                <div class="content-banner">
+                    <img style="width: 84px;
+                    height: 84px;" src="./assets/img/gamehand.png" alt="">
+
+                    <div class="banner-status">
+                        <div class="banner-left">
+                            <span>1.580.252</span>
+                            <span style="color: #000000; font-weight: 400;" >thành viên</span>
+
+                        </div>
+
+                        <div class="banner-right">
+                            <span>252</span>
+                            <img src="./assets/img/online.png" alt="">
+                            <span style="color: #000000; font-weight: 400;">Online</span>
+                        </div>
+
+                        <div class="banner-end">
+                            <div class="banner-text">
+                                <span>FOLLOW US</span>
+                            </div>
+
+                            <div class="banner-img">
+                                <img src="./assets/img/facebook 1.png" alt="">
+                            </div>
+                            <div class="banner-img">
+                                <img src="./assets/img/instagram-sketched 1.png" alt="">
+                            </div>
+                            <div class="banner-img">
+                                <img src="./assets/img/youtube 1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="game-new">
+                    <div class="game-new__title">
+                        <div class="game-new__title--left">
+                            <img style="display: inline-block;" src="/Game-vn/assets/img/newgamepng.png" alt="">
+                            <h4>GAME MỚI</h4>
+
+                        </div>
+
+                        <div class="game-new__title--right">
+                            <a href="">Xem tất cả <img alt=""></a>
+                            <img src="/Game-vn/assets/img/right.png" alt="">
+                        </div>
+                    </div>
+                    <div class="address-section row">
+                        
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Dynamons 2</h4>
+                                    </div>
+                                </div>
+        
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Dynamons 2</h4>
+                                    </div>
+                                </div>
+        
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Dynamons 2</h4>
+                                    </div>
+                                </div>
+        
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Dynamons 2</h4>
+                                    </div>
+                                </div>
+        
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Dynamons 2</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+        
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Dynamons 2</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Dynamons 2</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Dynamons 2</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Dynamons 2</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Dynamons 2</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Dynamons 2</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Dynamons 2</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                    </div>
                 </div>
 
-
-                <div class="address-section">
-                    
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+                <div class="game-new">
+                    <div class="game-new__title">
+                        <div class="game-new__title--left">
+                            <img style="display: inline-block;" src="/Game-vn/assets/img/GAMEHOT.png" alt="">
+                            <h4>GAME HOT</h4>
 
                         </div>
 
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Dynamons 2</h4>
-                            </div>
+                        <div class="game-new__title--right">
+                            <a href="">Xem tất cả <img alt=""></a>
+                            <img src="/Game-vn/assets/img/right.png" alt="">
                         </div>
-
-                        
                     </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Dynamons 2</h4>
-                            </div>
-                        </div>
-
+                    <div class="address-section row">
                         
+                            <div class="address-container col-xl-4 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg-hot" src="./assets/img/gamehot1.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+        
+                                
+                            </div>
+                            <div class="address-container col-xl-4 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg-hot" src="./assets/img/gamehot1.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+        
+                                
+                            </div>
+                            <div class="address-container col-xl-4 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg-hot" src="./assets/img/gamehot1.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+        
+                                
+                            </div>
+                            <div class="address-container col-xl-4 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg-hot" src="./assets/img/gamehot1.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+        
+                                
+                            </div>
+                            <div class="address-container col-xl-4 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg-hot" src="./assets/img/gamehot1.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+        
+                            <div class="address-container col-xl-4 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg-hot" src="./assets/img/gamehot1.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
                     </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+                </div>
+
+                <div class="game-new">
+                    <div class="game-new__title">
+                        <div class="game-new__title--left">
+                            <img style="display: inline-block;" src="/Game-vn/assets/img/GAMEBOX.png" alt="">
+                            <h4>GAME APP</h4>
 
                         </div>
 
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Dynamons 2</h4>
-                            </div>
+                        <div class="game-new__title--right">
+                            <a href="">Xem tất cả <img alt=""></a>
+                            <img src="/Game-vn/assets/img/right.png" alt="">
                         </div>
-
-                        
                     </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Dynamons 2</h4>
-                            </div>
-                        </div>
-
+                    <div class="address-section row">
                         
+                            <div class="address-container col-xl-3 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg" src="./assets/img/gameapp.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+        
+                                
+                            </div>
+                            <div class="address-container col-xl-3 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg" src="./assets/img/gameapp.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+        
+                                
+                            </div>
+                            <div class="address-container col-xl-3 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg" src="./assets/img/gameapp.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+        
+                                
+                            </div>
+                            <div class="address-container col-xl-3 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg" src="./assets/img/gameapp.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+        
+                                
+                            </div>
+                            <div class="address-container col-xl-3 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg" src="./assets/img/gameapp.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+        
+                            <div class="address-container col-xl-3 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg" src="./assets/img/gameapp.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-3 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg" src="./assets/img/gameapp.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-3 col-md-6 col-4">
+                                <div class="address__img--hot">
+                                    <img class="address__img--hot address__sourceimg" src="./assets/img/gameapp.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Shoot up.io</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            
                     </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
+                </div>
+                <div class="game-new">
+                    <div class="game-new__title">
+                        <div class="game-new__title--left">
+                            <img style="display: inline-block;" src="/Game-vn/assets/img/GAME.png" alt="">
+                            <h4>GAME CHƠI NGAY</h4>
 
                         </div>
 
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Dynamons 2</h4>
-                            </div>
+                        <div class="game-new__title--right">
+                            <a href="">Xem tất cả <img alt=""></a>
+                            <img src="/Game-vn/assets/img/right.png" alt="">
                         </div>
-                        
                     </div>
-
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Dynamons 2</h4>
-                            </div>
-                        </div>
+                    <div class="address-section row">
                         
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Dynamons 2</h4>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Fly Car Stunt</h4>
+                                    </div>
+                                </div>
+        
+                                
                             </div>
-                        </div>
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Dynamons 2</h4>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Fly Car Stunt</h4>
+                                    </div>
+                                </div>
+        
+                                
                             </div>
-                        </div>
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Dynamons 2</h4>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Fly Car Stunt</h4>
+                                    </div>
+                                </div>
+        
+                                
                             </div>
-                        </div>
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Dynamons 2</h4>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Fly Car Stunt</h4>
+                                    </div>
+                                </div>
+        
+                                
                             </div>
-                        </div>
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Dynamons 2</h4>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Fly Car Stunt</h4>
+                                    </div>
+                                </div>
+                                
                             </div>
-                        </div>
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/gameimg.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Dynamons 2</h4>
+        
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Fly Car Stunt</h4>
+                                    </div>
+                                </div>
+                                
                             </div>
-                        </div>
-                        
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Fly Car Stunt</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Fly Car Stunt</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Fly Car Stunt</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Fly Car Stunt</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Fly Car Stunt</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="address-container col-xl-2 col-md-3 col-4">
+                                <div class="address-img">
+                                    <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
+        
+                                </div>
+        
+                                <div class="address-info">
+                                    <div class="address-heading">
+                                        <h4>Fly Car Stunt</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
                     </div>
                 </div>
             </div>
-
-            <div class="game-new ">
-                <div class="game-new__title">
-                    <img style="display: inline-block;" src="/Game-vn/assets/img/GAME.png" alt="">
-                    <h4>GAME CHƠI NGAY</h4>
-                    <a href="">Xem tất cả <img style="position: absolute; top:4px ;" src="/Game-vn/assets/img/right.png" alt=""></a>
-                </div>
-
-
-                <div class="address-section">
-                    
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Fly Car Hunt</h4>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Fly Car Hunt</h4>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Fly Car Hunt</h4>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Fly Car Hunt</h4>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Fly Car Hunt</h4>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Fly Car Hunt</h4>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Fly Car Hunt</h4>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Fly Car Hunt</h4>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Fly Car Hunt</h4>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Fly Car Hunt</h4>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Fly Car Hunt</h4>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="address-container">
-                        <div class="address-img">
-                            <img class="address-img address__sourceimg" src="/Game-vn/assets/img/game2.png" alt="">
-
-                        </div>
-
-                        <div class="address-info">
-                            <div class="address-heading">
-                                <h4>Fly Car Hunt</h4>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="game-app">
-
-            </div>
-
-            <div class="game-playnow">
-
-            </div>
+            
 
             
         </div>
 
         <div id="contact" class="contact">
-            <div class="line-left"></div>
 
-            <h3 class="head-contact">ĐỐI TÁC CỦA CHÚNG TÔI</h3>
+            <div class="contact-head container-fluid">
+                <div class="line-left"></div>
+                <h3 class="contact-title">ĐỐI TÁC CỦA CHÚNG TÔI</h3>
+                <div class="line-right"></div>
 
-            <div class="line-right"></div>
+            </div>
 
-            <div class="img-contact">
-                <div class="contact-container">
-                    <div class="contact-img">
+            <div class="digital-wrap">
+                <div class="img-contact row justify-content-center">
+                    
+                    <div class="contact-container col-4 col-lg-2 col-sm-4">
                         <img class="contact-img contact__sourceimg" src="/Game-vn/assets/img/viettel.png" alt="">
-
                     </div>
-                </div>
-                <div class="contact-container">
-                    <div class="contact-img">
+                    
+                    <div class="contact-container col-4 col-lg-2 col-sm-4">
                         <img class="contact-img contact__sourceimg" src="/Game-vn/assets/img/vinaphone.png" alt="">
-
                     </div>
-                </div>
-                <div class="contact-container">
-                    <div class="contact-img">
+                    
+                    <div class="contact-container col-4 col-lg-2 col-sm-4">
                         <img class="contact-img contact__sourceimg" src="/Game-vn/assets/img/vtv.png" alt="">
-
                     </div>
-                </div>
-                <div class="contact-container">
-                    <div class="contact-img">
+                    
+                    <div class="contact-container col-4 col-lg-2 col-sm-4">
                         <img class="contact-img contact__sourceimg" src="/Game-vn/assets/img/vtc.png" alt="">
-
                     </div>
-                </div>
-                <div class="contact-container">
-                    <div class="contact-img">
+                    
+                    <div class="contact-container col-4 col-lg-2 col-sm-4">
                         <img class="contact-img contact__sourceimg" src="/Game-vn/assets/img/paytech.png" alt="">
-
                     </div>
-                </div>
-                <div class="contact-container">
-                    <div class="contact-img">
+                    
+                    <div class="contact-container col-4 col-lg-2 col-sm-4">
                         <img class="contact-img contact__sourceimg" src="/Game-vn/assets/img/môm.png" alt="">
-
                     </div>
                 </div>
             </div>
+            
         </div>
 
 
-        <div id="footer" class="footer">
-            <h5 class="text-heading">© 2021 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries. VAT included in all prices where applicable.</h5>
+        <div id="footer" class="footer container">
+            <!-- <h5 class="text-heading">© 2021 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries. VAT included in all prices where applicable.</h5>
             <img class="img-heading" style="display: inline-block;" src="./assets/img/VME.png" alt="">
                 <div class="footer-section">
                     <div class="footer-text">
@@ -544,6 +874,7 @@
                         </ul>
                         <ul class="footer-info2">
                             <li>Refunds</li>
+                            
                             <li>Cookies</li>
                         </ul>
                         
@@ -559,8 +890,46 @@
                         
                     </div>
                     <p class="footer-end">@Copyright 2021 Game, All rights reserved</p>
+                </div> -->
+            <div class="row footer-wrap__top">
+                <div class="footer-logo col-lg-2 col-sm-12">
+                    <img class="footer-logo__img" style="display: inline-block;" src="./assets/img/VME.png" alt="">
                 </div>
+                <div class="footer-desc col-lg-10 col-sm-12">
+                    <span>© 2021 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries. VAT included in all prices </span>
+                </div>
+            </div>
+            <div class="row footer-wrap__bottom">
+                <div class="col-lg-7 col-12 footer-info">
+                    <span class="footer-sub__text">INFO</span>
+                    <ul class="row">
+                        <li class="col-12 col-lg-6 footer-info__text">Privacy Policy</li>
+                        <li class="col-12 col-lg-6 footer-info__text">Legal</li>
+                        <li class="col-12 col-lg-6 footer-info__text">Refunds</li>
+                        <li class="col-12 col-lg-6 footer-info__text">Cookies</li>
+                        <li class="col-12 col-lg-12 footer-info__text">Steam Subscriber Agreement</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-12 footer-sub">
+                    <span class="footer-sub__text">
+                        Subscribe
+                    </span>
+                    <div class="input-group input-sub__wrap">
+                        <input type="email" class="form-control" placeholder="Email" aria-label="UseEmailrname" aria-describedby="addon-wrapping">
+                        <button class="btn btn-outline-danger" type="button" id="button-1">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </div>
+                </div>   
+            </div>
+            <div class="">
+                <span class="footer-copyright">@Copyright 2021 Game, All rights reserved</span>
+            </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
 </body>
 </html>
